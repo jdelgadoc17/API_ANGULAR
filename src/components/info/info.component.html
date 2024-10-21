@@ -1,0 +1,24 @@
+
+<div id="general">
+    <h2 class="title-info">
+        Información de Elden Ring
+    </h2>
+    
+    <div class="container-info">
+        <div *ngFor="let cada of info" class="card-info">
+            <div class="img-info">
+                <h3>{{cada.name}}</h3>
+                <img [src]="cada.image" alt="{{cada.name}}">
+                <p><strong>Ubicación:</strong> {{ cada.location }}</p>
+                <p><strong>Región:</strong> {{ cada.region }}</p>
+                <p><strong>Descripción:</strong> {{ cada.description }}</p>
+
+
+            </div>
+            
+    
+        </div>
+    
+    </div>
+
+</div>
